@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fandom</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <section id="header">
+        <div class="header container">
+          <div class="nav-bar">
+            <div class="brand">
+              <a href="#home">
+                <h1>Kamikazee</h1>
+              </a>
+            </div>
+            <div class="nav-list">
+              <div class="along">
+                <div class="bar"></div>
+              </div>
+              <ul class='menu-icons'>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                <li><a href="#home" data-after="Home">Home</a></li>
+                <li><a href="#album" data-after="Albums">Albums</a></li>
+                <li><a href="#members" data-after="Members">Members</a></li>
+                <li><a href="#about" data-after="About">About</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+              </span>
+              <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="home">
+        <video autoplay loop muted plays-inline class="vid">
+          <source src="bidyo .mp4" type="video/mp4">
+      </video>
+       
+      </section>
+      <!-- End Home -->
+    <br>
+      <!-- Album -->
+      <section id="album">
+        <div class="album container">
+          <div class="album-top">
+            <h1 class="section-title"> KAMIKAZEE GREATEST HITS SONG</h1>
+             
+            <div class="music-container">
+                
+              <div class="player">
+                <div class="wrapper">
+                    <div class="details">
+                        <div class="now-playing">PLAYING x OF y</div>
+                        <div class="track-art"></div>
+                        <div class="track-name">Track Name</div>
+                        <div class="track-artist">Track Artist</div>
+                    </div>
+         
+                    <div class="slider_container">
+                        <div class="current-time">00:00</div>
+                         <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                         <div class="total-duration">00:00</div>
+                    </div>
+         
+                    <div class="slider_container">
+                        <i class="fa fa-volume-down"></i>
+                         <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                         <i class="fa fa-volume-up"></i>
+                    </div>
+         
+                    <div class="buttons">
+                        <div class="random-track" onclick="randomTrack()">
+                            <i class="fas fa-random fa-2x" title="random"></i>
+                        </div>
+                        <div class="prev-track" onclick="prevTrack()">
+                             <i class="fa fa-step-backward fa-2x"></i>
+                         </div>
+                         <div class="playpause-track" onclick="playpauseTrack()">
+                             <i class="fa fa-play-circle fa-5x"></i>
+                         </div>
+                         <div class="next-track" onclick="nextTrack()">
+                             <i class="fa fa-step-forward fa-2x"></i>
+                         </div>
+                         <div class="repeat-track" onclick="repeatTrack()">
+                             <i class="fa fa-repeat fa-2x" title="repeat"></i>
+                         </div>
+                    </div>
+         
+                    <div id="wave">
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                </div>  
+                </div>
+            </div>
+             
+      </section>
+      <!-- End Album -->
+    
+      <!-- Member Section -->
+      <section id="members">
+        <div class="members container">
+          <div class="members-header">
+            <h1 class="section-title">Band Members</h1>
+          </div>
+          <div class="all-members">
+            <div class="members-item">
+              <div class="members-info">
+                <h1>Ferdinand Jay Contreras</h1>
+                <h2>Singer</h2>
+              </div>
+              <div class="members-img">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.aCYVnntluALUCpeCbiyOfwHaE8&pid=Api&P=0&h=180" alt="img">
+              </div>
+            </div>
+            <div class="members-item">
+              <div class="members-info">
+                <h1>Jose Ma. Luis "Jomal" Linao</h1>
+                <h2>Lead Guitarist</h2>
+              </div>
+              <div class="members-img">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.pIryyXo7AQtxMirpRU8ZTgHaFi&pid=Api&P=0&h=180" alt="img">
+              </div>
+            </div>
+            <div class="members-item">
+              <div class="members-info">
+                <h1> Led Zeppelin Tuyay</h1>
+                <h2>Rhythm and Lead guitar</h2>
+              </div>
+              <div class="members-img">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.MwffZvLj5kHknSYWOjAowwHaE8&pid=Api&P=0&h=180" alt="img">
+              </div>
+            </div>
+            <div class="members-item">
+                <div class="members-info">
+                  <h1> Jason "Puto" Astete</h1>
+                  <h2>Bass Guitar</h2>
+                </div>
+                <div class="members-img">
+                  <img src="https://tse4.mm.bing.net/th?id=OIP.ZR_Wxcx8_aTYBcUWt9UmnAHaE8&pid=Api&P=0&h=180" alt="img">
+                </div>
+              </div>
+              <div class="members-item">
+                <div class="members-info">
+                  <h1> Allan "Bords" Burdeos</h1>
+                  <h2>Drums, Percussion</h2>
+                </div>
+                <div class="members-img">
+                  <img src="https://tse4.mm.bing.net/th?id=OIP.QGbSg64vQxgJgryUSk4rqgHaJQ&pid=Api&P=0&h=180" alt="img">
+                </div>
+              </div>
+              <div class="members-item">
+                <div class="members-info">
+                  <h1>Jianelli James "Jian" Lubiano</h1>
+                  <h2> Rhythm Guitar</h2>
+                </div>
+                <div class="members-img">
+                  <img src="https://tse2.mm.bing.net/th?id=OIP.teyWKN9jn0CUlxwURynwcAAAAA&pid=Api&P=0&h=180" alt="img">
+                </div>
+              </div>
+            <div class="members-item">
+              <div class="members-info">
+                <h1>Mikki Jill</h1>
+                <h2>Keyboards</h2>
+              </div>
+              <div class="members-img">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.krbu2vnFhRjzwzhdpwVt5wHaEK&pid=Api&P=0&h=180" alt="img">
+              </div>
+            </div>
+            
+      </section>
+      <!-- End ng Member Section -->
+    
+      <!-- About Section -->
+      <section id="about">
+  
+            <h1 class="section-title">About <span></span></h1>
+  
+            <p>Kamikazee (or sometimes stylized as KMKZ) is a Filipino rock band formed in 2000. </p>
+            <p> Fans and critics have described the band's music as a mix of pop punk and hardcore punk.</p>
+            <p> The band is composed of five members who met at the College of Fine Arts of the University of the Philippines, Diliman.</p> 
+            <p> Kamikazee's early gigs were mostly on-campus events in UP Diliman like the annual UP Fair. Before they were signed to a major label, they went by the name "Kamikazee Cornflakes", eventually shortening the name to "Kamikazee".</p> 
+            <p> Their early shows included performances of the songs "Mmm Sarap", "Tsinelas", a cover of singer Ariel Rivera's "Sana Kahit Minsan", and Britney Spears' Lucky.</p>
+             <p> Their live performances have since been known for using expletives, sexually suggestive dances, and references to genitalia. Despite such antics, their music incorporates many elements of modern rock music, such as pop-punk, grunge and NU-metal, on some of their songs. Band drummer Bords Burdeos was also recognized for his drumwork, which according to fans and critics, added extra flair to the band's songs.</p>
+              <p> Kamikazee released their first studio album in 2002. The album's carrier single was a heavy cover version of Britney Spears' "Lucky". Other notable songs include "Girlfriend", "Ung Tagalog", "Tsinelas" and their cover of Ariel Rivera's "Sana Kahit Minsan". In 2005, the band released "Chiksilog" as part of the Ragnarok MMORPG compilation album Rok On!.</p>
+            <p> In August 2015, the band had temporarily reunited after a brief hiatus announced earlier in January 2015. By the beginning of 2016, the band officially entered an indefinite hiatus. They played their farewell concert on December 10, 2015, at the Smart Araneta Coliseum. Around 2017, the band had a reunion gig and has been touring since.</p>
+            <br>
+            <br>
+
+          </section>
+      <!-- End ng About Section -->
+    
+      <!-- Footer -->
+      <section id="footer">
+        <div class="footer container">
+          <div class="brand">
+            
+          <p>Copyright © 2024. All rights reserved</p>
+          
+        </div>
+      </section>
+      <!-- End ng Footer -->
+
+
+    </body>
+    
+    </html>
+</body>
+</html>
